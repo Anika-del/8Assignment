@@ -1,0 +1,17 @@
+Commlhe daily
+saction
+Mancomunited, 567 There is a tomsaction to
+update a table is able to reach to or roliback. Then these values get displayed (as Dirty Read) in transaction. any of these states like compira SELECT query of "Read Uncommitted station
+568 569 iil-> Repeatable Read.
+570 This level doesn't guarantee that reads are repeatable. But it does ensure that data won't change for the life of the transaction once.
+571
+572 Iv-> Serializable.
+573 It is similar to Repeatable Read level. The only difference is that it stops Phantom Read and utilizes the range lock. If the table has an index, then it secures the records based on the range defined in the WHERE (like where ID between 1 and 3). If a table does not have an index, then it locks complete table Gene
+574
+I 575 v-> Snapshot.
+576 It is similar to Serializable isolation. The difference is that Snapshot does not hold a lock on a table during the transaction. Thus allowing the table to get modified in other sessions. Snapshot isolation maintains version in Tempdb for old data. In case any data modification happens in other sessions then existing transaction displays the old data from Tempdb.
+577
+578
+579
+580
+.00 Redmi Note 10T 5G | ANI_PATEL

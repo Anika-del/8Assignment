@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class Hcf {
+    public static void main(String arg[]) {
+        long n1, n2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number 1");
+        n1 = sc.nextLong();
+        System.out.println("Enter number 2");
+        n2 = sc.nextLong();
+        long result = hcfCal(n1, n2);
+        System.out.println("HCF of two numbers = " + result);
+    }
+
+    static long hcfCal(long a, long b) {
+        long temp;
+        while (b > 0) {
+            temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return b;
+    }
+}
+/*
+D:\8Assignment\2ArraysAssignment\Assignment\20TO30>java Hcf
+Enter number 1
+12
+Enter number 2
+43
+HCF of two numbers = 0
+ */
